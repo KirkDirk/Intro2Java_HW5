@@ -8,9 +8,11 @@ package date221121.HW5;
 // 6. **Сравнить время прямого и случайного перебора тысячи элементов словарей.
 
 import java.util.Map;
+import java.util.Random;
 import java.util.TreeMap;
 import java.util.Map.Entry;
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class hw5 {
     public static void main(String[] args) {
@@ -57,23 +59,9 @@ public class hw5 {
         }
         long timeSTMend = System.nanoTime() - timeSTM;
         System.out.print("Прямой перебор: hash = " + timeSHMend + " и tree = " + timeSTMend);
-        // случайный
-        String indexR = "";
-        long timeSHMr = System.nanoTime();
-        for (int i = 0; i < hmSomeOne.size(); i++) {
-            
-        }
-        for (var item : hmSomeOne.entrySet()) {
-            index=item.getValue();
-        }
-        long timeSHMendr = System.nanoTime() - timeSHMr;
         
-        long timeSTMr = System.nanoTime();
-        for (var item : tmOhNoOne.entrySet()) {
-            index = item.getValue();
-        }
-        long timeSTMendr = System.nanoTime() - timeSTMr;
-        System.out.print("Случайный перебор: hash = " + timeSHMendr + " и tree = " + timeSTMendr);
+        // случайный
+     
 
     }
 }
